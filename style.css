@@ -1,0 +1,33 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0; }
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 10px; }
+
+header .heading__text-box h1 {
+  font-size: 3.5rem;
+  line-height: 3.8rem;
+  color: #ffffff;
+  text-transform: uppercase; }
+
+header {
+  background-image: url("/images/mobile/image-hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4rem 2.5rem;
+  position: relative;
+  height: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.heading__text-box {
+  height: 20rem;
+  padding: 2.5rem 2.5rem;
+  border: 0.2rem solid #ffffff; }
