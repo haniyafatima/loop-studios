@@ -1,0 +1,159 @@
+.section__creations {
+  margin-bottom: 6rem;
+
+  & ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  & li {
+    list-style: none;
+    width: 100%;
+    margin-bottom: 2rem;
+    height: 12rem;
+  }
+
+  & li img {
+    width: 100%;
+  }
+
+  &--btn {
+    font-family: "Alata", sans-serif;
+    color: $color-black;
+    border: 1px solid black;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    width: 6rem;
+    padding: 0.9rem 2.67rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.2s ease;
+    letter-spacing: 0.3rem;
+
+    &:hover {
+      background-color: $color-black;
+      color: $color-white;
+    }
+
+    &:visited {
+      text-decoration: none;
+    }
+  }
+}
+
+.grid-container {
+  @media screen and (min-width: 600px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "header cta"
+      "gallery gallery";
+  }
+}
+
+.creation__heading {
+  margin-bottom: 2rem;
+
+  @media screen and (min-width: 600px) {
+    grid-area: header;
+  }
+}
+
+.grid__item h3 {
+  padding: 5.25rem 0 0 2.05rem;
+  font-size: 2.35rem;
+  width: 14rem;
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: $color-white;
+}
+
+.the-grid h3 {
+  width: 5rem;
+}
+
+// tile images
+
+.deep-earth {
+  background-image: url("/images/mobile/image-deep-earth.jpg");
+  background-size: cover;
+
+  @media screen and (min-width: 600px) {
+    grid-area: gallery;
+  }
+}
+
+.night-arcade {
+  background-image: url("/images/mobile/image-night-arcade.jpg");
+  background-size: cover;
+
+  @media screen and (min-width: 600px) {
+    grid-area: gallery;
+  }
+}
+
+.soccer-team {
+  background-image: url("/images/mobile/image-soccer-team.jpg");
+  background-size: cover;
+
+  @media screen and (min-width: 600px) {
+    grid-area: gallery;
+  }
+}
+
+.the-grid {
+  background-image: url("/images/mobile/image-grid.jpg");
+  background-size: cover;
+
+  @media screen and (min-width: 600px) {
+    grid-area: gallery;
+  }
+}
+
+.up-above {
+  background-image: url("/images/mobile/image-from-above.jpg");
+  background-size: cover;
+
+  @media screen and (min-width: 600px) {
+    grid-area: gallery;
+  }
+}
+
+.pocket-borealis {
+  background-image: url("/images/mobile//image-pocket-borealis.jpg");
+  background-size: cover;
+
+  @media screen and (min-width: 600px) {
+    grid-area: gallery;
+  }
+}
+
+.curiosity {
+  background-image: url("/images/mobile/image-curiosity.jpg");
+  background-size: cover;
+
+  @media screen and (min-width: 600px) {
+    grid-area: gallery;
+  }
+}
+
+.fisheye {
+  background-image: url("/images/mobile/image-fisheye.jpg");
+  background-size: cover;
+
+  @media screen and (min-width: 600px) {
+    grid-area: gallery;
+  }
+}
+
+.creations__btn a {
+  display: block;
+  height: 4rem;
+  border: 2px solid black;
+
+  @media screen and (min-width: 600px) {
+    grid-area: cta;
+  }
+}

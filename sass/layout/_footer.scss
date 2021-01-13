@@ -1,0 +1,37 @@
+.footer {
+  background-color: $color-black;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  text-align: center;
+  font-family: "Alata", sans-serif;
+
+  &__logo {
+    margin-bottom: 3rem;
+  }
+
+  & li {
+    padding-bottom: 3rem;
+  }
+
+  & li a {
+    color: $color-white;
+    font-size: 2rem;
+    text-decoration: none;
+  }
+
+  &__copyright {
+    color: $color-gray;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & a {
+    margin-right: 1.5rem;
+  }
+}

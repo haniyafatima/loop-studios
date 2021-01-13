@@ -4,10 +4,15 @@
   margin: 0;
   padding: 0;
   box-sizing: 0;
+  font-size: 10px;
 }
 
 body {
-  // font-family: "Alata", sans-serif;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 10px;
+}
+
+.container {
+  width: 90%;
+  max-width: 74rem;
+  margin: 0 auto;
 }
