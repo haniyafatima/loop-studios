@@ -28,6 +28,10 @@ header {
   z-index: 3;
   right: 6rem;
   top: 4.5rem;
+
+  @media screen and (min-width: 1000px) {
+    display: none;
+  }
 }
 
 .main-nav {
@@ -40,9 +44,6 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.nav-list {
   background-color: $color-black;
   position: absolute;
   z-index: 2;
@@ -50,10 +51,24 @@ header {
   width: 100vw;
   top: 0;
   left: 0;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 1000px) {
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: transparent;
+    top: 5rem;
+    left: -10rem;
+    text-transform: initial;
+  }
 }
 
 .nav-list.open {
   visibility: hidden;
+
+  @media screen and (min-width: 1000px) {
+    visibility: visible;
+  }
 }
 
 .nav-item {
@@ -65,6 +80,11 @@ header {
   text-decoration: none;
   font-size: 3rem;
   padding-left: 4rem;
+
+  @media screen and (min-width: 1000px) {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
 }
 
 .heading__text-box {
