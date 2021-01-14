@@ -6,6 +6,10 @@ header {
   padding: 4rem 2.5rem;
   position: relative;
   height: 50rem;
+
+  @media screen and (min-width: 1200px) {
+    background-image: url("/images/desktop/image-hero.jpg");
+  }
 }
 
 .logo {
@@ -13,13 +17,16 @@ header {
   height: 3rem;
   position: absolute;
   z-index: 3;
-  left: 4rem;
+
+  @media screen and (min-width: 1200px) {
+    left: 10rem;
+  }
 }
 
 .ham {
   position: absolute;
   z-index: 3;
-  right: 4rem;
+  right: 6rem;
   top: 4.5rem;
 }
 
@@ -61,6 +68,12 @@ header {
 }
 
 .heading__text-box {
-  border: 1px solid $color-white;
+  border: 0.2rem solid $color-white;
   padding: 2rem 2rem 1.5rem 2rem;
+
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    left: 10rem;
+    max-width: 45%;
+  }
 }

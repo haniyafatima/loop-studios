@@ -3,16 +3,33 @@ header .heading__text-box h1 {
   line-height: 3.8rem;
   color: $color-white;
   text-transform: uppercase;
+
+  @media screen and (min-width: 700px) {
+    letter-spacing: 0.16rem;
+    font-size: 6rem;
+    line-height: 7rem;
+  }
 }
 
 section h2 {
   font-size: 3.2rem;
   line-height: 3.2rem;
   text-transform: uppercase;
-  text-align: center;
   padding-bottom: 1.6rem;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 4.2rem;
+    line-height: 4.2rem;
+  }
 }
 
+.intro-heading {
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
 .body-copy {
   font-family: "Alata", sans-serif;
   font-size: 1.5rem;
@@ -21,4 +38,12 @@ section h2 {
   color: $color-gray;
   width: 90%;
   margin: 0 auto;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    width: 100%;
+  }
+}
+
+a {
 }

@@ -7,4 +7,28 @@
   margin: 0 auto 4.7rem;
   width: 100%;
   max-width: 55rem;
+
+  @media screen and (min-width: 1200px) {
+    flex-grow: 1;
+    max-width: 100%;
+  }
+}
+
+.intro-content {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.text-container {
+  @media screen and (min-width: 1200px) {
+    position: relative;
+    z-index: 2;
+    align-self: flex-end;
+    background-color: $color-white;
+    margin-left: -10rem;
+    margin-bottom: 4rem;
+    padding: 7.4rem 0 3rem 5.4rem;
+    width: 69rem;
+  }
 }

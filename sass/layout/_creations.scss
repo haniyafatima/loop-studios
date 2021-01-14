@@ -1,22 +1,6 @@
 .section__creations {
   margin-bottom: 6rem;
 
-  & ul {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  & li {
-    list-style: none;
-    width: 100%;
-    margin-bottom: 2rem;
-    height: 12rem;
-  }
-
-  & li img {
-    width: 100%;
-  }
-
   &--btn {
     font-family: "Alata", sans-serif;
     color: $color-black;
@@ -43,22 +27,24 @@
 }
 
 .grid-container {
-  @media screen and (min-width: 600px) {
-    display: grid;
+  display: grid;
+  grid-row: auto;
+  grid-gap: 2rem;
+  margin-bottom: 3rem;
+
+  @media screen and (min-width: 500px) {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "header cta"
-      "gallery gallery";
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+
+  @media screen and (min-width: 1200px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50rem 50rem;
   }
 }
 
 .creation__heading {
   margin-bottom: 2rem;
-
-  @media screen and (min-width: 600px) {
-    grid-area: header;
-  }
 }
 
 .grid__item h3 {
@@ -68,6 +54,15 @@
   text-transform: uppercase;
   font-weight: lighter;
   color: $color-white;
+
+  @media screen and (min-width: 1200px) {
+    padding: 40.25rem 0 0 3rem;
+    font-size: 2.7rem;
+  }
+}
+
+.grid__item {
+  text-decoration: none;
 }
 
 .the-grid h3 {
@@ -80,8 +75,9 @@
   background-image: url("/images/mobile/image-deep-earth.jpg");
   background-size: cover;
 
-  @media screen and (min-width: 600px) {
-    grid-area: gallery;
+  @media screen and (min-width: 1200px) {
+    background-image: url("/images/desktop/image-deep-earth.jpg");
+    background-size: cover;
   }
 }
 
@@ -89,8 +85,9 @@
   background-image: url("/images/mobile/image-night-arcade.jpg");
   background-size: cover;
 
-  @media screen and (min-width: 600px) {
-    grid-area: gallery;
+  @media screen and (min-width: 1200px) {
+    background-image: url("/images/desktop/image-night-arcade.jpg");
+    background-size: cover;
   }
 }
 
@@ -98,8 +95,9 @@
   background-image: url("/images/mobile/image-soccer-team.jpg");
   background-size: cover;
 
-  @media screen and (min-width: 600px) {
-    grid-area: gallery;
+  @media screen and (min-width: 1200px) {
+    background-image: url("/images/desktop/image-soccer-team.jpg");
+    background-size: cover;
   }
 }
 
@@ -107,8 +105,10 @@
   background-image: url("/images/mobile/image-grid.jpg");
   background-size: cover;
 
-  @media screen and (min-width: 600px) {
-    grid-area: gallery;
+  @media screen and (min-width: 1200px) {
+    background-image: url("/images/desktop/image-grid.jpg");
+    background-size: cover;
+    background-position: top;
   }
 }
 
@@ -116,8 +116,9 @@
   background-image: url("/images/mobile/image-from-above.jpg");
   background-size: cover;
 
-  @media screen and (min-width: 600px) {
-    grid-area: gallery;
+  @media screen and (min-width: 1200px) {
+    background-image: url("/images/desktop/image-from-above.jpg");
+    background-size: cover;
   }
 }
 
@@ -125,8 +126,9 @@
   background-image: url("/images/mobile//image-pocket-borealis.jpg");
   background-size: cover;
 
-  @media screen and (min-width: 600px) {
-    grid-area: gallery;
+  @media screen and (min-width: 1200px) {
+    background-image: url("/images/desktop/image-pocket-borealis.jpg");
+    background-size: cover;
   }
 }
 
@@ -134,8 +136,9 @@
   background-image: url("/images/mobile/image-curiosity.jpg");
   background-size: cover;
 
-  @media screen and (min-width: 600px) {
-    grid-area: gallery;
+  @media screen and (min-width: 1200px) {
+    background-image: url("/images/desktop/image-curiosity.jpg");
+    background-size: cover;
   }
 }
 
@@ -143,17 +146,69 @@
   background-image: url("/images/mobile/image-fisheye.jpg");
   background-size: cover;
 
-  @media screen and (min-width: 600px) {
-    grid-area: gallery;
+  @media screen and (min-width: 1200px) {
+    background-image: url("/images/desktop/image-fisheye.jpg");
+    background-size: cover;
   }
 }
 
-.creations__btn a {
+.hvr-sweep-to-right {
+  margin: 0 auto;
+  width: 10rem;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  border: 1px solid black;
   display: block;
-  height: 4rem;
-  border: 2px solid black;
+  color: $color-black;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.2rem;
+  font-family: "Alata", sans-serif;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
 
-  @media screen and (min-width: 600px) {
-    grid-area: cta;
+  @media screen and (min-width: 1200px) {
+    font-size: 1.2rem;
   }
 }
+.hvr-sweep-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $color-black;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-right:hover,
+.hvr-sweep-to-right:focus,
+.hvr-sweep-to-right:active {
+  color: white;
+}
+.hvr-sweep-to-right:hover:before,
+.hvr-sweep-to-right:focus:before,
+.hvr-sweep-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/* Sweep To Right */
